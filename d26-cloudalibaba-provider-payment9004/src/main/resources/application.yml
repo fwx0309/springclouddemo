@@ -1,0 +1,25 @@
+server:
+  port: 9004
+
+# 配置Spring应用的基本信息
+spring:
+  # 应用名称
+  application:
+    name: cloudalibaba-provider-payment
+  # 配置云服务相关信息
+  cloud:
+    # 配置Nacos服务发现
+    nacos:
+      discovery:
+        # Nacos服务器地址和端口
+        server-addr: localhost:8848
+
+
+# 配置管理端点的暴露设置
+management:
+  endpoints:
+    # 配置Web端点的暴露策略
+    web:
+      exposure:
+        # 包括所有端点，允许它们通过HTTP访问
+        include: "*"

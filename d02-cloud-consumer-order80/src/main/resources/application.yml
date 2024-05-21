@@ -1,0 +1,12 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-consumer-order80
+
+
+# 自定义参数
+payment:
+  server:
+    url: http://localhost:8001
